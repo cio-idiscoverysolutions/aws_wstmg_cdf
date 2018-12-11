@@ -16,7 +16,7 @@ explore: i_ds_gps_data_anchors_of_interest {}
 
 # - explore: gps_temp
 
-# - explore: i_ds_gps_data
+explore: i_ds_gps_data {}
 
 # - explore: primary_audit
 
