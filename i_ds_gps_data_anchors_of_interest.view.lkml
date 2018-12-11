@@ -69,5 +69,6 @@ view: i_ds_gps_data_anchors_of_interest {
     type: sum
     sql: ${ss} ;;
     drill_fields: [full_name, anc_id, from_time, to_time, ss]
+    view_label: "Total Minutes Spent"
   }
 }
