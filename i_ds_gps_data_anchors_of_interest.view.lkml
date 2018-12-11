@@ -67,7 +67,7 @@ view: i_ds_gps_data_anchors_of_interest {
   }
   measure: sum {
     type: sum
-    sql: ${ss}/60.0 ;;
+    sql: ${ss} ;;
     drill_fields: [full_name]
   }
 }
