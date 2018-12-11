@@ -63,11 +63,11 @@ view: i_ds_gps_data_anchors_of_interest {
   }
   measure: count {
     type: count
-    drill_fields: [full_name]
+    drill_fields: [full_name, anc_id, from_time, to_time, ss]
   }
   measure: sum {
     type: sum
     sql: ${ss} ;;
-    drill_fields: [full_name]
+    drill_fields: [full_name, anc_id, from_time, to_time, ss]
   }
 }
