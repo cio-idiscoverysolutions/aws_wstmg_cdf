@@ -25,7 +25,7 @@ view: i_ds_gps_data {
       week,
       month,
       quarter,
-      year
+      year,day_of_week
     ]
     sql: ${TABLE}.DATE_SOURCE ;;
   }
