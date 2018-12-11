@@ -19,7 +19,15 @@ view: i_ds_gps_data_anchors_of_interest {
     ]
     sql: ${TABLE}."From" ;;
   }
+  dimension: anc_lat {
+    type: number
+    sql: ${TABLE}.ANC_LAT ;;
+  }
 
+  dimension: anc_lon {
+    type: number
+    sql: ${TABLE}.ANC_LON ;;
+  }
   dimension: full_name {
     type: string
     sql: ${TABLE}.FULL_NAME ;;
@@ -48,7 +56,11 @@ view: i_ds_gps_data_anchors_of_interest {
     ]
     sql: ${TABLE}."To" ;;
   }
-
+  dimension: anc_location {
+    type: location
+    sql_latitude: ${anc_lat} ;;
+    sql_longitude: ${anc_lon} ;;
+  }
   measure: count {
     type: count
     drill_fields: [full_name]

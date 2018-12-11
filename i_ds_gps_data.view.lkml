@@ -64,7 +64,16 @@ view: i_ds_gps_data {
     type: number
     sql: ${TABLE}.TARGET_ID ;;
   }
-
+  dimension: gps_location {
+    type: location
+    sql_latitude: ${lat} ;;
+    sql_longitude: ${lon} ;;
+  }
+  dimension: anc_location {
+    type: location
+    sql_latitude: ${anc_lat} ;;
+    sql_longitude: ${anc_lon} ;;
+  }
   measure: count {
     type: count
     drill_fields: [full_name]
