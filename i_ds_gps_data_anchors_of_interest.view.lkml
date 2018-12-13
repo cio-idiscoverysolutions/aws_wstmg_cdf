@@ -37,6 +37,7 @@ view: i_ds_gps_data_anchors_of_interest {
   dimension: ss {
     type: number
     sql: ${TABLE}.ss ;;
+    label: "Duration (Minutes)"
   }
 
   dimension: target_id {
