@@ -38,7 +38,7 @@ view: cdf_stats {
 
   dimension: mYear  {
     type: string
-    sql: cast(${TABLE}.MONTH as varchar) + '/' cast(${TABLE}.Year as varchar) ;;
+    sql: cast(${TABLE}.MONTH as varchar) + '/' + cast(${TABLE}.Year as varchar) ;;
   }
 
   dimension: year {
