@@ -36,10 +36,16 @@ view: cdf_stats {
     sql: ${TABLE}.MONTH ;;
   }
 
+  dimension: mYear  {
+    type: string
+    sql: cast(${TABLE}.MONTH as varchar) + '/' cast(${TABLE}.Year as varchar) ;;
+  }
+
   dimension: year {
     type: number
     sql: ${TABLE}.YEAR ;;
   }
+
 
   measure: count {
     type: count
