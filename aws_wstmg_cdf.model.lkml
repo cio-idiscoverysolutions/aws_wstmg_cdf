@@ -18,3 +18,5 @@ include: "*.view.lkml"                       # include all views in this project
 #   }
 # }
 explore: cdf_stats {}
+
+explore: table_stats {}
