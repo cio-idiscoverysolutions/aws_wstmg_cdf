@@ -15,7 +15,8 @@ view: i_ds_gps_data_anchors_of_interest {
       week,
       month,
       quarter,
-      year
+      year,
+      hour_of_day
     ]
     sql: ${TABLE}."From" ;;
   }
@@ -52,7 +53,8 @@ view: i_ds_gps_data_anchors_of_interest {
       week,
       month,
       quarter,
-      year
+      year,
+      hour_of_day
     ]
     sql: ${TABLE}."To" ;;
   }
