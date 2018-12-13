@@ -18,7 +18,7 @@ explore: i_ds_gps_data_anchors_of_interest {}
 
 explore: i_ds_gps_data {}
 
-explore: cdf_stats {}
+
 # - explore: primary_audit
 
 # - explore: relationship
