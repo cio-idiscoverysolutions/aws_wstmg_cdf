@@ -46,7 +46,7 @@ view: cdf_stats {
     sql: ${TABLE}.YEAR ;;
   }
 
-  measure: sum {
+  measure: Cnt {
     type: sum
     drill_fields: [cdf_tablename, cnt]
   }
