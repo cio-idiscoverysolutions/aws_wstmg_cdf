@@ -36,9 +36,14 @@ view: cdf_stats {
     sql: ${TABLE}.MONTH ;;
   }
 
-  dimension: mYear  {
-    type: string
-    sql: cast(${TABLE}.MONTH as varchar) + '/' + cast(${TABLE}.Year as varchar) ;;
+  dimension: mYear_end  {
+    type: date_time
+    sql: dateadd(month, 1,convert(datetime2, cast(cdf_stats.MONTH as varchar) + '/01/' + cast(cdf_stats.Year as varchar))) ;;
+  }
+
+  dimension: mYear_start  {
+    type: date_time
+    sql: convert(datetime2, cast(cdf_stats.MONTH as varchar) + '/01/' + cast(cdf_stats.Year as varchar)) ;;
   }
 
   dimension: year {
