@@ -21,7 +21,8 @@ view: udf {
       week,
       month,
       quarter,
-      year
+      year,
+      time_of_day
     ]
     sql: ${TABLE}.DATE_BEG_LCL ;;
   }
@@ -35,7 +36,8 @@ view: udf {
       week,
       month,
       quarter,
-      year
+      year,
+      time_of_day
     ]
     sql: ${TABLE}.DATE_BEG_SOURCE ;;
   }
@@ -49,24 +51,12 @@ view: udf {
       week,
       month,
       quarter,
-      year
+      year,
+      time_of_day
     ]
     sql: ${TABLE}.DATE_BEG_UTC ;;
   }
 
-  dimension_group: date_created {
-    type: time
-    timeframes: [
-      raw,
-      time,
-      date,
-      week,
-      month,
-      quarter,
-      year
-    ]
-    sql: ${TABLE}.DATE_CREATED ;;
-  }
 
   dimension_group: date_end_lcl {
     type: time
@@ -91,7 +81,8 @@ view: udf {
       week,
       month,
       quarter,
-      year
+      year,
+      time_of_day
     ]
     sql: ${TABLE}.DATE_END_SOURCE ;;
   }
@@ -105,24 +96,12 @@ view: udf {
       week,
       month,
       quarter,
-      year
+      year,
+      time_of_day
     ]
     sql: ${TABLE}.DATE_END_UTC ;;
   }
 
-  dimension_group: date_lastmodified {
-    type: time
-    timeframes: [
-      raw,
-      time,
-      date,
-      week,
-      month,
-      quarter,
-      year
-    ]
-    sql: ${TABLE}.DATE_LASTMODIFIED ;;
-  }
 
   dimension: dst {
     type: string
