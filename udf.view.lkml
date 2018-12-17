@@ -178,7 +178,11 @@ view: udf {
     type: string
     sql: ${TABLE}.VERSION_STATUS ;;
   }
-
+  dimension: udf_gps_location {
+    type: location
+    sql_latitude: ${gps_lat} ;;
+    sql_longitude: ${gps_lon} ;;
+  }
   measure: count {
     type: count
     drill_fields: [detail*]
