@@ -182,6 +182,7 @@ view: udf {
     type: location
     sql_latitude: ${gps_lat} ;;
     sql_longitude: ${gps_lon} ;;
+    drill_fields: [detail*]
   }
   measure: count {
     type: count
