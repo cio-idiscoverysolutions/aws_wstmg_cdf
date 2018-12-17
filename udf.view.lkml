@@ -40,6 +40,7 @@ view: udf {
       time_of_day
     ]
     sql: ${TABLE}.DATE_BEG_SOURCE ;;
+    drill_fields: [detail*]
   }
 
   dimension_group: date_beg_utc {
