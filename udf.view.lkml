@@ -189,9 +189,8 @@ view: udf {
       udf_id,
       ppl.ppl_id,
       ppl.full_name,
-      ppl.first_name,
-      ppl.middle_name,
-      ppl.last_name,
+      date_beg_source_time,
+      date_end_source_time,
       obj.obj_id,
       obj.name,
       loc.loc_id,
@@ -200,7 +199,10 @@ view: udf {
       evt.name,
       src.src_id,
       src.name,
-      src.disp_name
+      src.disp_name,
+      gps_lat,
+      gps_lon
+
     ]
   }
 }
