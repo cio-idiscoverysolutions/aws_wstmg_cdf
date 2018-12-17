@@ -48,7 +48,6 @@ explore: udf {
     view_label: "People"
 
   }
-
   join: obj{
     type: left_outer
     sql_on: ${udf.obj_id} = ${obj.obj_id} ;;
@@ -59,11 +58,13 @@ explore: udf {
     type: left_outer
     sql_on: ${udf.loc_id} = ${loc.loc_id} ;;
     relationship: one_to_many
+    view_label: "Location"
   }
   join: evt{
     type: left_outer
     sql_on: ${udf.evt_id} = ${evt.evt_id} ;;
     relationship: one_to_many
+    view_label: "Event"
   }
   join: src{
     type: left_outer
