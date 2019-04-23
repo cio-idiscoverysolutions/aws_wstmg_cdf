@@ -15,4 +15,9 @@ view: table_stats {
     type: count
     drill_fields: [delivery_name]
   }
+
+  measure: RowCnt {
+    type: sum
+    drill_fields: [delivery_name]
+  }
 }
