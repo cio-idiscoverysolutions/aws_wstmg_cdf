@@ -1,5 +1,5 @@
 view: table_stats {
-  sql_table_name: dbo.TableStats ;;
+  sql_table_name: dbo.CDF_Table_Stats ;;
 
   dimension: delivery_name {
     type: string
